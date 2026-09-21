@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://lyttleg.github.io/cv/">
+  <a href="https://lyttleg.github.io/">
     <img src="./qr-code-lyttleg-github-io" alt="QR code vers mon CV en ligne" width="220">
   </a>
 </p>
@@ -22,7 +22,7 @@
   <a href="https://lyttleg.github.io/">
     <img src="https://img.shields.io/badge/🌐_Voir_mon_CV_en_ligne-0b1220?style=for-the-badge" alt="Voir mon CV en ligne">
   </a>
-  <a href="https://lyttleg.github.io/cv/Gerome%20GUILLEMIN_CV.pdf">
+  <a href="./Gerome%20GUILLEMIN_CV.pdf">
     <img src="https://img.shields.io/badge/📥_Télécharger_le_PDF-374151?style=for-the-badge" alt="Télécharger le CV PDF">
   </a>
 </p>
