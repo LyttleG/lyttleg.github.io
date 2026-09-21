@@ -1,4 +1,4 @@
-# Gérôme GUILLEMIN — Curriculum Vitae
+# Gérôme GUILLEMIN - Curriculum Vitae
 
 <p align="center">
   <strong>📄 Mon CV professionnel</strong>
@@ -22,7 +22,7 @@
   <a href="https://lyttleg.github.io/cv/">
     <img src="https://img.shields.io/badge/🌐_Voir_mon_CV_en_ligne-0b1220?style=for-the-badge" alt="Voir mon CV en ligne">
   </a>
-  <a href="./cv/Gerome%20GUILLEMIN_CV.pdf)">
+  <a href="https://lyttleg.github.io/cv/Gerome%20GUILLEMIN_CV.pdf">
     <img src="https://img.shields.io/badge/📥_Télécharger_le_PDF-374151?style=for-the-badge" alt="Télécharger le CV PDF">
   </a>
 </p>
@@ -31,15 +31,14 @@
 
 ## 🔗 Accès
 
-**CV en ligne :**
-https://lyttleg.github.io/cv/
+**CV en ligne**
+[🌐 https://lyttleg.github.io/cv/](https://lyttleg.github.io/cv/)
 
-**Version PDF :**
-[📄 Télécharger mon CV](./Gerome%20GUILLEMIN_CV.pdf)
+**Télécharger le CV au format PDF**
+[📄 Gerome GUILLEMIN_CV.pdf](https://lyttleg.github.io/cv/Gerome%20GUILLEMIN_CV.pdf)
 
 ---
 
 <p align="center">
   <em>Merci pour votre visite.</em>
 </p>
-
