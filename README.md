@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://lyttleg.github.io/cv/">
-    <img src="./qr-code-lyttleg-cv.png" alt="QR code vers mon CV en ligne" width="220">
+    <img src="./qr-code-lyttleg-github-io" alt="QR code vers mon CV en ligne" width="220">
   </a>
 </p>
 
@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="https://lyttleg.github.io/cv/">
+  <a href="https://lyttleg.github.io/">
     <img src="https://img.shields.io/badge/🌐_Voir_mon_CV_en_ligne-0b1220?style=for-the-badge" alt="Voir mon CV en ligne">
   </a>
   <a href="https://lyttleg.github.io/cv/Gerome%20GUILLEMIN_CV.pdf">
@@ -32,10 +32,10 @@
 ## 🔗 Accès
 
 **CV en ligne**
-[🌐 https://lyttleg.github.io/cv/](https://lyttleg.github.io/cv/)
+[🌐 https://lyttleg.github.io/](https://lyttleg.github.io/)
 
 **Télécharger le CV au format PDF**
-[📄 Gerome GUILLEMIN_CV.pdf](https://lyttleg.github.io/cv/Gerome%20GUILLEMIN_CV.pdf)
+[📄 Gerome GUILLEMIN_CV.pdf](https://lyttleg.github.io/Gerome%20GUILLEMIN_CV.pdf)
 
 ---
 
