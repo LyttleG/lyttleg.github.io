@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gérôme GUILLEMIN — CV</title>
+  <meta name="description" content="CV de Gérôme GUILLEMIN. Consultez ou téléchargez mon CV au format PDF.">
+  <meta name="theme-color" content="#0b1220">
+
+  <style>
+    :root {
+      --bg: #0b1220;
+      --bg-2: #111a2e;
+      --card: rgba(255, 255, 255, 0.08);
+      --card-border: rgba(255, 255, 255, 0.14);
+      --text: #f7f9fc;
+      --muted: #aeb9cc;
+      --accent: #7dd3fc;
+      --accent-2: #a78bfa;
+      --dark: #08111f;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(125, 211, 252, 0.14), transparent 32%),
+        radial-gradient(circle at 90% 15%, rgba(167, 139, 250, 0.16), transparent 30%),
+        linear-gradient(135deg, var(--bg), var(--bg-2));
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 56px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-radius: var(--radius);
+    }
+
+    .intro {
+      padding: clamp(28px, 5vw, 58px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      padding: 7px 12px;
+      border: 1px solid rgba(125, 211, 252, 0.24);
+      border-radius: 999px;
+      color: var(--accent);
+      background: rgba(125, 211, 252, 0.08);
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 14px var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 7vw, 5.6rem);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+    }
+
+    .subtitle {
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.3rem);
+      max-width: 650px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 12px 18px;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      text-decoration: none;
+      font-weight: 750;
+      transition:
+        transform 160ms ease,
+        border-color 160ms ease,
+        background 160ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, 0.28);
+    }
+
+    .button-primary {
+      color: var(--dark);
+      background: linear-gradient(135deg, var(--accent), #c4b5fd);
+      border-color: transparent;
+    }
+
+    .button-secondary {
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .qr-card {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .qr-card h2 {
+      margin: 0 0 6px;
+      font-size: 1.1rem;
+    }
+
+    .qr-card p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .qr-frame {
+      width: min(240px, 70vw);
+      aspect-ratio: 1;
+      padding: 14px;
+      display: grid;
+      place-items: center;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+    }
+
+    .qr-frame img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .qr-link {
+      margin-top: 16px;
+      color: var(--accent);
+      text-decoration: none;
+      word-break: break-word;
+      font-size: 0.92rem;
+    }
+
+    .qr-link:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      margin-top: 28px;
+    }
+
+    .pdf-card {
+      overflow: hidden;
+    }
+
+    .pdf-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 22px;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .pdf-title {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .pdf-meta {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .pdf-container {
+      background: #e5e7eb;
+      min-height: 760px;
+    }
+
+    .pdf-container iframe {
+      display: block;
+      width: 100%;
+      height: 78vh;
+      min-height: 760px;
+      border: 0;
+    }
+
+    .download-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 18px 22px;
+      border-top: 1px solid var(--card-border);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .download-bar p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    footer {
+      padding: 26px 8px 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.84rem;
+    }
+
+    @media (max-width: 850px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .qr-card {
+        padding: 28px;
+      }
+
+      .pdf-container iframe {
+        height: 70vh;
+        min-height: 560px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .page {
+        width: min(100% - 20px, 1120px);
+        padding-top: 14px;
+      }
+
+      .intro,
+      .qr-card {
+        border-radius: 20px;
+      }
+
+      .intro {
+        padding: 28px 22px;
+      }
+
+      h1 {
+        font-size: clamp(2.35rem, 15vw, 4rem);
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .pdf-header,
+      .download-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .pdf-container iframe {
+        height: 66vh;
+        min-height: 480px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .button {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="card intro">
+        <div class="eyebrow">CV professionnel</div>
+
+        <h1>Gérôme<br>GUILLEMIN</h1>
+
+        <p class="subtitle">
+          Bienvenue sur mon CV en ligne. Consultez mon parcours directement
+          depuis cette page ou téléchargez la version PDF.
+        </p>
+
+        <div class="actions">
+          <a
+            class="button button-primary"
+            href="Gerome%20GUILLEMIN_CV.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            ↗ Ouvrir le CV
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="Gerome%20GUILLEMIN_CV.pdf"
+            download="Gerome GUILLEMIN_CV.pdf"
+          >
+            ↓ Télécharger le PDF
+          </a>
+        </div>
+      </div>
+
+      <aside class="card qr-card">
+        <h2>Accès rapide</h2>
+        <p>Scannez ce QR code pour ouvrir mon CV.</p>
+
+        <div class="qr-frame">
+          <img
+            src="qr-code-lyttleg-github-io.png"
+            alt="QR code vers https://lyttleg.github.io/"
+            loading="lazy"
+          >
+        </div>
+
+        <a class="qr-link" href="https://lyttleg.github.io/">
+          https://lyttleg.github.io/
+        </a>
+      </aside>
+    </section>
+
+    <section class="content">
+      <div class="card pdf-card">
+        <div class="pdf-header">
+          <div>
+            <h2 class="pdf-title">Mon CV</h2>
+            <p class="pdf-meta">Version PDF · consultable directement en ligne</p>
+          </div>
+
+          <a
+            class="button button-secondary"
+            href="Gerome%20GUILLEMIN_CV.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            Ouvrir en plein écran
+          </a>
+        </div>
+
+        <div class="pdf-container">
+          <iframe
+            src="Gerome%20GUILLEMIN_CV.pdf#view=FitH"
+            title="CV de Gérôme GUILLEMIN"
+          >
+            Votre navigateur ne peut pas afficher le PDF intégré.
+            <a href="Gerome%20GUILLEMIN_CV.pdf">Ouvrir le CV</a>.
+          </iframe>
+        </div>
+
+        <div class="download-bar">
+          <p>Vous préférez conserver une copie du CV ?</p>
+
+          <a
+            class="button button-primary"
+            href="Gerome%20GUILLEMIN_CV.pdf"
+            download="Gerome GUILLEMIN_CV.pdf"
+          >
+            ↓ Télécharger mon CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Gérôme GUILLEMIN · CV en ligne
+    </footer>
+  </main>
+</body>
+</html>
